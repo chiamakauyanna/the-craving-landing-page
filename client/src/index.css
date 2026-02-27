@@ -1,1 +1,29 @@
 @import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-primary: #1a1a1a;
+  --color-secondary: #111111;
+  --color-accent: #FF4500;
+  --color-white: #ffffff;
+  --color-textLight: #a0a0a0;
+
+  /* Fonts */
+  --font-heading: "Syne", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+}
+
+body {
+  background-color: var(--color-primary);
+  font-family: var(--font-body);
+  color: var(--color-white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
