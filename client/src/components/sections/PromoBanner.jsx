@@ -1,7 +1,58 @@
+import foodImg from "../../assets/images/food-img7.png";
+import deliveryImg from "../../assets/images/delivery.png";
+import Button from "../common/Button";
+
 const PromoBanner = () => {
   return (
-    <div>PromoBanner</div>
-  )
-}
+    <section id="promo" className="py-20 px-6 lg:px-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:grid-cols-2">
+        {/* Left Card */}
+        <div className="relative overflow-hidden rounded-3xl bg-secondary p-10 flex flex-col justify-between min-h-64">
+          <div>
+            <h3 className="font-heading text-2xl md:text-3xl font-bold text-white xl:text-4xl">
+              Choose Your <span className="text-accent">Favorite</span> Food
+            </h3>
+            <p className="mt-4 text-textLight leading-relaxed font-semibold">
+              Browse through our wide selection of burgers, pizza, shawarma,
+              small chops and more. Something for every craving, every time.
+            </p>
+          </div>
+          <Button text="View Menu" className="mt-8 w-fit text-primary" />
 
-export default PromoBanner
+          {/* Decorative food image */}
+          <img
+            src={foodImg}
+            alt="food"
+            className="absolute right-0 -bottom-15 w-40 xl:w-48 object-cover opacity-80 rotate-90"
+          />
+        </div>
+
+        {/* Right Card */}
+        <div className="relative overflow-hidden rounded-3xl bg-accent p-10 flex flex-col justify-between min-h-64">
+          <div>
+            <h3 className="font-heading text-2xl md:text-3xl font-bold text-white xl:text-4xl">
+              Order Online and Get Fast Delivery
+            </h3>
+            <p className="mt-4 text-white/80 leading-relaxed font-semibold">
+              Place your order from anywhere and we will bring it straight to
+              your door. Hot, fresh and right on time.
+            </p>
+          </div>
+          <Button
+            text="Order Now"
+            className="mt-8 bg-primary w-fit text-accent hover:bg-secondary"
+          />
+
+          {/* Decorative food image */}
+          <img
+            src={deliveryImg}
+            alt="delivery"
+            className="absolute right-0 bottom-0 w-40 xl:w-48 object-cover opacity-80"
+          />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default PromoBanner;

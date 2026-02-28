@@ -5,14 +5,14 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative flex flex-col items-center gap-12 pt-30"
+      className="relative flex flex-col items-center gap-12 pt-40"
     >
       {/* Content on the left */}
       <div className="text-center">
-        <h1 className="text-5xl font-bold xl:text-7xl">
+        <h1 className="text-3xl md:text-5xl font-bold xl:text-7xl">
           Feed <span className="text-accent"> The Craving</span>
         </h1>
-        <p className="mt-4 font-body text-textLight xl:text-lg">
+        <p className="mt-4 font-body text-textLight xl:text-lg px-15">
           Your favorite foods, all in one place. Order now and taste the
           difference.
         </p>
@@ -20,12 +20,16 @@ const HeroSection = () => {
 
       {/* Call to Action Buttons */}
       <div className="flex gap-4">
-        <Button text="Order Now" className="text-primary" />
+        <a href="#booking">
+          <Button text="Order Now" className="text-primary" />
+        </a>
 
-        <Button
-          text=" View Menu"
-          className="bg-primary border-accent text-accent border"
-        />
+        <a href="#menu">
+          <Button
+            text=" View Menu"
+            className="bg-primary border-accent text-accent border hover:bg-secondary"
+          />
+        </a>
       </div>
 
       {/* Image */}

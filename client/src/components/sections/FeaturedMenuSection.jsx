@@ -1,41 +1,13 @@
 import MenuCard from "../ui/MenuCard";
-import burger from "../../assets/images/food-img33.png";
-import pizza from "../../assets/images/food-img18.png";
-import chickenandchips from "../../assets/images/food-img8.png";
-import sharwarma from "../../assets/images/sharwarma.jpg";
 import Button from "../common/Button";
-
-const menuItems = [
-  {
-    id: 1,
-    name: "Smash Burger",
-    price: "3,500",
-    image: burger,
-    tag: "Popular",
-  },
-  { id: 2, name: "Pepperoni Pizza", price: "5,200", image: pizza, tag: "New" },
-  {
-    id: 3,
-    name: "Chicken and chips",
-    price: "5,800",
-    image: chickenandchips,
-    tag: null,
-  },
-  {
-    id: 4,
-    name: "Chicken Shawarma",
-    price: "3,500",
-    image: sharwarma,
-    tag: "Popular",
-  },
-];
+import { menuItems } from "../../data/index";
 
 const FeaturedMenuSection = () => {
   return (
     <section id="menu" className="py-34 px-6 lg:px-20">
       {/* Header */}
       <div className="text-center">
-        <h2 className="font-heading text-3xl font-bold text-white xl:text-5xl">
+        <h2 className="font-heading text-2xl md:text-3xl font-bold text-white xl:text-5xl">
           Fan
           <span className="text-accent"> Favorites</span>
         </h2>
@@ -58,7 +30,7 @@ const FeaturedMenuSection = () => {
       <div className="mt-12 flex justify-center">
         <Button
           text="View Full Menu"
-          className="border border-accent text-accent hover:bg-accent hover:text-white transition-all duration-300 bg-primary"
+          className="border border-accent text-accent  bg-primary"
         />
       </div>
     </section>

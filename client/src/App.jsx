@@ -5,6 +5,8 @@ import FeaturedMenuSection from "./components/sections/FeaturedMenuSection";
 import AboutSection from "./components/sections/AboutSection";
 import PromoBanner from "./components/sections/PromoBanner";
 import Footer from "./components/sections/Footer";
+import TestimonialsSection from "./components/sections/TestimonialSection";
+import BookingSection from "./components/sections/BookingSection";
 
 const App = () => {
   return (
@@ -15,6 +17,8 @@ const App = () => {
       <FeaturedMenuSection />
       <AboutSection />
       <PromoBanner />
+      <TestimonialsSection/>
+      <BookingSection/>
       <Footer />
     </div>
   );

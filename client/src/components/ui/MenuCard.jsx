@@ -19,9 +19,9 @@ const MenuCard = ({ name, price, image, tag }) => {
 
       {/* Details */}
       <div className="p-4">
-        <h3 className="font-heading text-white font-bold text-lg">{name}</h3>
+        <h3 className="font-heading font-bold md:text-lg">{name}</h3>
         <div className="mt-3 flex items-center justify-between">
-          <p className="text-accent font-bold text-lg">₦{price}</p>
+          <p className="text-accent font-bold md:text-lg">₦{price}</p>
           <Button
             text="Order Now"
             className="text-primary hover:bg-accent/80 transition-colors duration-300"

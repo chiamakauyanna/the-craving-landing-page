@@ -1,7 +1,7 @@
 const NavBar = () => {
   return (
     <div>
-      <ul className="flex items-center gap-6 font-heading">
+      <ul className="flex items-center gap-6 font-heading text-xs md:text-sm lg:text-base">
         <li>
           <a href="#home">Home</a>
         </li>
@@ -9,10 +9,10 @@ const NavBar = () => {
           <a href="#menu">Menu</a>
         </li>
         <li>
-          <a href="#aboutUs">About Us</a>
+          <a href="#about">About Us</a>
         </li>
         <li>
-          <a href="#contactus">Contact Us</a>
+          <a href="#booking">Contact Us</a>
         </li>
       </ul>
     </div>
