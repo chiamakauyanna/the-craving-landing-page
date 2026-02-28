@@ -1,7 +1,7 @@
 const NavBar = () => {
   return (
     <div>
-      <ul className="flex items-center gap-6 font-heading text-xs md:text-sm lg:text-base">
+      <ul className="flex items-center gap-6 font-heading text-xs md:text-sm lg:text-base text-textLight font-semibold">
         <li>
           <a href="#home">Home</a>
         </li>
