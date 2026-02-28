@@ -29,7 +29,7 @@ const FeaturedMenuSection = () => {
       <div className="mt-12 flex justify-center">
         <Button
           text="View Full Menu"
-          className="border border-accent text-accent  bg-primary"
+          className="border border-accent text-accent  bg-primary hover:bg-secondary"
         />
       </div>
     </section>

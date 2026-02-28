@@ -10,8 +10,8 @@ A modern fast food restaurant landing page built with React and Tailwind CSS.
 
 ## Tech Stack
 - React
-- Tailwind CSS v4
+- Tailwind CSS
 - Framer Motion
 
 ## Live Demo
-[View Live Site]()
+[View Live Site](https://the-craving.vercel.app/)
