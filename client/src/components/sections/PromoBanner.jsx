@@ -7,7 +7,6 @@ const PromoBanner = () => {
   return (
     <section id="promo" className="py-20 px-6 lg:px-20">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
-        
         {/* Left Card */}
         <AnimateOnScroll direction="left" className="h-full">
           <div className="h-full relative overflow-hidden rounded-3xl bg-secondary p-6 md:p-10 flex flex-col justify-between">
@@ -56,7 +55,6 @@ const PromoBanner = () => {
             />
           </div>
         </AnimateOnScroll>
-
       </div>
     </section>
   );
