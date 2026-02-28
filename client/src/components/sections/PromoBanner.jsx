@@ -6,10 +6,11 @@ import AnimateOnScroll from "../common/AnimateOnScroll";
 const PromoBanner = () => {
   return (
     <section id="promo" className="py-20 px-6 lg:px-20">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:grid-cols-2 items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+        
         {/* Left Card */}
-        <AnimateOnScroll direction="left">
-          <div className="relative overflow-hidden rounded-3xl bg-secondary p-6 md:p-10 flex flex-col justify-between min-h-64">
+        <AnimateOnScroll direction="left" className="h-full">
+          <div className="h-full relative overflow-hidden rounded-3xl bg-secondary p-6 md:p-10 flex flex-col justify-between">
             <div className="lg:max-w-[75%]">
               <h3 className="font-heading text-2xl md:text-3xl font-bold text-white xl:text-4xl">
                 Choose Your <span className="text-accent">Favorite</span> Food
@@ -31,8 +32,8 @@ const PromoBanner = () => {
         </AnimateOnScroll>
 
         {/* Right Card */}
-        <AnimateOnScroll direction="right">
-          <div className="relative overflow-hidden rounded-3xl bg-accent p-6 md:p-10 flex flex-col justify-between min-h-64">
+        <AnimateOnScroll direction="right" className="h-full">
+          <div className="h-full relative overflow-hidden rounded-3xl bg-accent p-6 md:p-10 flex flex-col justify-between">
             <div className="lg:max-w-[75%]">
               <h3 className="font-heading text-2xl md:text-3xl font-bold text-white xl:text-4xl">
                 Order Online and Get Fast Delivery
@@ -55,6 +56,7 @@ const PromoBanner = () => {
             />
           </div>
         </AnimateOnScroll>
+
       </div>
     </section>
   );
